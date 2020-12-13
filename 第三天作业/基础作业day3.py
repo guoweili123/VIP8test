@@ -34,6 +34,7 @@
 
 #
 #  斐波那契数列
+# 第一种：
 # l = [1,1]
 # i = 0
 # j = int(input('请输入数列长度：'))
@@ -42,6 +43,16 @@
 #     l.append(c)
 #     i += 1
 # print(l)
+
+# 第二种：
+
+i = int(input('输入第几位数：'))
+def fib(n):
+    if n == 1 or n == 2:
+        return 1
+    return fib(n - 1) + fib(n - 2)
+fib_result = fib(i)
+print(fib_result)
 
 
 # 2.打印由*组成的菱形，该菱形一共7行，已在群里发了，大家自己找图
